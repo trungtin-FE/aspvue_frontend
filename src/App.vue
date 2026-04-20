@@ -5,7 +5,7 @@ const message = ref('')
 
 onMounted(async () => {
   try {
-    const res = await fetch('...')
+    const res = await fetch('http://localhost:5246')
     message.value = await res.text()
   } catch (err) {
     console.error(err)
